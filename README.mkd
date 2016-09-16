@@ -1,0 +1,55 @@
+# Symbiotic
+Small python program helping one to find things around.
+
+## Install
+Install requirements:
+
+    pip install -r requirements
+
+Note that [`docopt`](http://docopt.org) is mandatory,
+but [`Levenshtein`](https://github.com/ztane/python-Levenshtein/) is not.
+(it *just* provide a consequent speed up)
+[`feedparser`](http://pythonhosted.org/feedparser/) is for easy news.
+The amazing [`pytest`](http://pytest.org) is for tests.
+
+Not tested on: mac, windows, dinopython.
+Tested on: fedora, python 3.4. (theoric compatibility with 3.3+)
+Should basically work anywhere. If not, you probably have not python.
+
+
+## Database
+The database is in `data/symbiose.json`, and is JSON-formated.
+RDF would be so much better, but need another requirement for I/O and treatment.
+
+On any error/missing information, use my mail.
+
+
+## CLI description
+### find a buddy
+
+    python3 -m symbiotic locate luka bourgneuf
+
+works also with one word:
+
+    python3 -m symbiotic locate luka
+
+Will print at most three results, the the first is generally the good one. *Generally*.
+
+
+### find a helping buddy
+
+    python3 -m symbiotic locate printer
+
+or, more specifically:
+
+    python3 -m symbiotic locate printer orange
+
+
+### find where are buddies
+
+    python3 -m symbiotic locate room oléron
+
+
+### get something to say during pause
+
+    python3 -m symbiotic news
