@@ -18,7 +18,7 @@ Should basically work anywhere. If not, you probably have not python.
 
 
 ## Database
-The database is in `data/symbiose.json`, and is JSON-formated.
+The database must be in `data/base.json`, and is JSON-formated.
 RDF would be so much better, but need another requirement for I/O and treatment.
 
 On any error/missing information, use my mail.
@@ -47,7 +47,7 @@ or, more specifically:
 
 ### find where are buddies
 
-    python3 -m symbiotic locate room oléron
+    python3 -m symbiotic locate room A234
 
 
 ### get something to say during pause
