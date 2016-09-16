@@ -8,7 +8,10 @@ pr:
 	$(PYTHON) symbiotic locate printer
 
 news:
-	$(PYTHON) symbiotic news
+	$(PYTHON) symbiotic news 10
+
+validate:
+	$(PYTHON) symbiotic validate
 
 
 t: test
