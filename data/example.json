@@ -1,0 +1,53 @@
+{
+    "room graph": {
+        "1": ["2", "3"],
+        "2": ["3"],
+        "3": ["4"],
+        "4": ["5"],
+        "5": ["1"]
+    },
+    "humans": {
+        "Marie De Désert": {
+            "project": "water torrefaction",
+            "room": "4"
+        },
+        "Gérard Menvuça": {
+            "project": "water torrefaction",
+            "room": "2"
+        },
+        "Alain Térieur": {
+            "project": "transparent chalk",
+            "room": "3"
+        }
+        "Hélène Tressée": {
+            "project": "transparent chalk",
+            "room": "1"
+        }
+    },
+    "printers": {
+        "Zouzouk": {
+            "color": true,
+            "A3": false,
+            "room": "2"
+        }
+    },
+    "rooms": {
+        "Dijkstra": {
+            "is": "meeting room",
+            "features": "coffee machine, power point"
+        },
+        "5": {
+            "is": "WC"
+        }
+    },
+    "options": {
+        "locate": {
+            "max_found": 3,
+            "min_similarity": 0.5
+        },
+        "news": {
+            "max_article": 3,
+            "rss_feed_url": "http://bioinfo-fr.net/feed"
+        }
+    }
+}
