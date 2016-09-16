@@ -4,7 +4,7 @@ usage:
     symbiotic locate printer [<name>...]
     symbiotic locate room <name>...
     symbiotic locate <firstname> [<lastname>...]
-    symbiotic news [<n>]
+    symbiotic news [<n>] [<rss_url>]
     symbiotic pause
     symbiotic blague [--rigolote]
     symbiotic validate
@@ -37,7 +37,7 @@ if __name__ == "__main__":
     if args['blague']:
         blague.tell(rigolote=args['--rigolote'])
     if args['news']:
-        news.fetch(int(args['<n>'] or 0))
+        news.fetch(int(args['<n>'] or 0), args['<rss_url>'] or None)
     if args['pause']:
         pause.detect()
 
