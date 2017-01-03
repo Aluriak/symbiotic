@@ -1,10 +1,10 @@
 
 from itertools import islice
-import feedparser
 from symbiotic.data import Data
 
 
 def fetch(max_article=None, rss_feed_url=None):
+    import feedparser
     payload = Data.from_file()
     if not max_article:
         max_article = int(payload.news_options['max_article'])
